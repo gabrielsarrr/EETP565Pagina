@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 607px;
+    background-image: url('img/futuraFachadaNoche.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    z-index: 0; /*para que este atras y poder poner lo otro adelante*/
+}
+
+.navbar-title {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    z-index: 1; /*para que aparezca adelante del fondo*/
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    position: relative;
+    z-index: 1; /*para que aparezca adelante del fondo*/
+}
+
+.navbar-logo img {
+    height: 75px;
+}
+.navbar-logo :hover {
+    transform: scale(1.1) rotate(360deg);
+    transition: transform 0.6s;
+}
+
+.navbar-botones {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-botones li a {
+    text-decoration: none;
+    color: #ffff;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 8px 16px;
+    transition: background 0.2s;
+    border-radius: 4px;
+}
+
+.navbar-botones li a:hover {
+    background: #000000a2;
+}
