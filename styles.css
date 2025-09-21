@@ -4,14 +4,18 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+nav {
+    position: relative;
+    width: 100%;
+    height: 65vh;
+}
 .navbar-background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 607px;
-    background-image: url('img/futuraFachadaNoche.png');
+    height: 65vh;
+    background-image: url('img/futuraFachadaNocheGPT\(calidad\).png');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -20,11 +24,11 @@
 
 .navbar-title {
     position: absolute;
-    top: 25%;
+    top: 50%;
     left: 50%;
     transform: translateX(-50%);
-    color: white;
-    font-size: 32px;
+    color: #ffff;
+    font-size: 3.5vh;
     font-weight: 700;
     z-index: 1; /*para que aparezca adelante del fondo*/
 }
@@ -67,3 +71,48 @@
 .navbar-botones li a:hover {
     background: #000000a2;
 }
+
+.main-content {
+    width: 100%;
+    margin: 3vh auto;
+}
+
+.main-noticias {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.noticias-title-content {
+    margin-bottom: 3vh;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.noticias-card-content {
+    display: flex;
+    gap: 10vh;
+    justify-content: center;
+}
+
+.noticias-card img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /*para que la imagen no se deforme y ocupe todo el espacio, hay que sacarlo si se va a poner una imagen que no es cuadrada */
+}
+
+.noticias-card{
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.noticias-card p {
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    text-align: justify;
+}
+
