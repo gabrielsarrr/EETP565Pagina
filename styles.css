@@ -4,11 +4,17 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+body {
+    background-color: #e0e0e0;
+}
+/* COMIENZA EL -NAV- */
 nav {
     position: relative;
     width: 100%;
     height: 65vh;
 }
+
 .navbar-background {
     position: absolute;
     top: 0;
@@ -22,6 +28,8 @@ nav {
     z-index: 0; /*para que este atras y poder poner lo otro adelante*/
 }
 
+/* COMIENZA: TITULO (nombre escuela) */
+
 .navbar-title {
     display: flex;
     position: absolute;
@@ -31,25 +39,29 @@ nav {
     left: 50%;
     transform: translateX(-50%);
     color: #ffff;
-    /*font-size: 3.5vh;*/
     font-weight: 700;
     z-index: 1; /*para que aparezca adelante del fondo*/
 }
 
-.navbar-title img {
-    height: 75px;
-    width: auto;
-}
-
 .navbar-title h1 {
-    font-size: 3.5vh;
+    font-size: 10vh;
     white-space: nowrap; /*hace que no se corte en varias lineas es decir "EETP, ING, NIKOLA; TESLA, */
 }
 
-.navbar-title-logo :hover {
-    transform: scale(1.1) rotate(360deg);
-    transition: transform 0.6s;
+/* TERMINA: TITULO (nombre escuela) */
+/* COMIENZA: LOGO (logo escuela) */
+.navbar-logo img{
+    height: 100px;
+    width: 100px;
 }
+
+.navbar-logo :hover {
+    transform: scale(1.1) rotate(360deg);
+    transition: 1.1s;
+}
+/* TERMINA: LOGO (logo escuela) */
+
+/* COMIENZO: BOTONES DE LA ESQUINA SUPERIOR DERECHA */
 
 .navbar-container {
     display: flex;
@@ -77,12 +89,14 @@ nav {
     font-size: 18px;
     padding: 8px 16px;
     transition: background 0.2s;
-    border-radius: 4px;
+    border-radius:10px;
 }
 
 .navbar-botones li a:hover {
-    background: #000000a2;
+    background: #0000004f;
 }
+/* TERMINA: BOTTONES SUPERIOR DERECHA */
+/* TERMINA: NAV */
 
 .main-content {
     width: 100%;
@@ -117,7 +131,7 @@ nav {
 .noticias-card{
     background: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
     width: 300px;
 }
 
