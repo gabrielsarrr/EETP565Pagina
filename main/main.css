@@ -152,7 +152,7 @@ nav {
 }
 
 .pqe-container h2 {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700;
     text-align: center;
 }
@@ -169,21 +169,38 @@ nav {
 .pqe-card {
     color: #ffff;
     padding: 20px;
-    padding: 10px;
     justify-content: center;
     text-align: center;
-    border: 1px solid white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    max-width: 250px;
 }
 
-.pqe-cards img {
-    width: 100px;
-    height: 100px;
+.pqe-card img {
+    width: 150px;
+    height: 150px;
+    filter: brightness(0) invert(1); /*para poner la imagen blanca*/
 }
 
 .pqe-card h3 {
     font-size: 18px;
     font-weight: 400;
+    line-height: 1.4;
 }
+
+.pqe-card:not(:last-child)::after /* para poner la linea entre las cards, el :not(:last-child) es para que no se ponga en la ultima card*/ {
+    content: ""; /*necesario para que el after funcione, se pone aunque este vacio*/
+    position: absolute;
+    right: -5vh;
+    top: 15%;
+    bottom: 15%;
+    width: 1px;
+    background-color: #ffff;
+}
+
 /* TERMINA: POR QUE ELEGIRNOS */
 /* 
 .noticias-title-content {
