@@ -21,7 +21,7 @@ nav {
     left: 0;
     width: 100%;
     height: 65vh;
-    background-image: url('/img/futuraFachadaDiaGPT.png');
+    background-image: url('/img/escuela-sede/futuraFachadaDiaGPT.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -159,16 +159,17 @@ nav {
 
 .pqe-card-content {
     display: flex;
-    gap: 10vh;
-    justify-content: center;
+    /* gap: 10vh; */
+    justify-content: space-evenly;
     margin-top: 3vh;
     height: 28vh;
     background-color: #b70100;
+    padding: 0 5vw; /* padding horizontal - v-width */
 }
 
 .pqe-card {
     color: #ffff;
-    padding: 20px;
+    padding: 20px 0;
     justify-content: center;
     text-align: center;
     position: relative;
@@ -176,16 +177,18 @@ nav {
     flex-direction: column;
     align-items: center;
     flex: 1;
-    max-width: 250px;
+    max-width: none;
+    min-width: 0;
 }
 
 .pqe-card img {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     filter: brightness(0) invert(1); /*para poner la imagen blanca*/
 }
 
 .pqe-card h3 {
+    margin-top: 10px;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.4;
@@ -194,44 +197,11 @@ nav {
 .pqe-card:not(:last-child)::after /* para poner la linea entre las cards, el :not(:last-child) es para que no se ponga en la ultima card*/ {
     content: ""; /*necesario para que el after funcione, se pone aunque este vacio*/
     position: absolute;
-    right: -5vh;
+    right: 0;
+    transform: translateX(50%);
     top: 15%;
     bottom: 15%;
     width: 1px;
     background-color: #ffff;
 }
-
 /* TERMINA: POR QUE ELEGIRNOS */
-/* 
-.noticias-title-content {
-    margin-bottom: 3vh;
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.noticias-card-content {
-    display: flex;
-    gap: 10vh;
-    justify-content: center;
-}
-
-.noticias-card img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover; /*para que la imagen no se deforme y ocupe todo el espacio, hay que sacarlo si se va a poner una imagen que no es cuadrada 
-}
-
-.noticias-card{
-    background: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
-    width: 300px;
-}
-
-.noticias-card p {
-    padding: 15px;
-    font-size: 16px;
-    color: #333;
-    text-align: justify;
-}
- */

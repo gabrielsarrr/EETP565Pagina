@@ -71,3 +71,34 @@ nav {
     background: #0000004f;
 }
 
+.noticias-title-content {
+    margin-bottom: 3vh;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.noticias-card-content {
+    display: flex;
+    gap: 10vh;
+    justify-content: center;
+}
+
+.noticias-card img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /*para que la imagen no se deforme y ocupe todo el espacio, hay que sacarlo si se va a poner una imagen que no es cuadrada */
+}
+
+.noticias-card{
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    width: 300px;
+}
+
+.noticias-card p {
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    text-align: justify;
+}
